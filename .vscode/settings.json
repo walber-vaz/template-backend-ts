@@ -5,4 +5,7 @@
     "source.fixAll.eslint": true
   },
   "prettier.configPath": "./.prettierrc.json",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 }

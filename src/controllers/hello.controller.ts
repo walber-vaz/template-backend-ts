@@ -8,7 +8,7 @@ export class HelloController {
   }
 
   getHello = async (_req: Request, res: Response): Promise<Response> => {
-    const hello = await this.helloService.sayHello();
+    const hello = await this.helloService.index();
     return res.status(200).json({
       message: hello,
     });
