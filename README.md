@@ -9,7 +9,7 @@ Este é um repositório boilerplate para projetos backend em Node.js com Typescr
 Primeiro, clone este repositório para a sua máquina local:
 
 ```bash
-git clone
+git clone https://github.com/walber-vaz/template-backend-ts.git
 ```
 
 Em seguida, instale as dependências do projeto:
