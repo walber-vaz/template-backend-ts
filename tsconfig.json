@@ -8,35 +8,36 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "moduleResolution": "node",
     "paths": {
-      "@": [
-        "./src/*"
+      "@/*": [
+        "*"
       ],
-      "@/controllers": [
-        "./src/controllers/*"
+      "@/config/*": [
+        "config/*"
       ],
-      "@/models": [
-        "./src/models/*"
+      "@/controllers/*": [
+        "controllers/*"
       ],
-      "@/services": [
-        "./src/services/*"
+      "@/middlewares/*": [
+        "middlewares/*"
       ],
-      "@/utils": [
-        "./src/utils/*"
+      "@/models/*": [
+        "models/*"
       ],
-      "@/middlewares": [
-        "./src/middlewares/*"
+      "@/routes/*": [
+        "routes/*"
       ],
-      "@/types": [
-        "./src/types/*"
+      "@/services/*": [
+        "services/*"
       ],
-      "@/config": [
-        "./src/config/*"
+      "@/utils/*": [
+        "utils/*"
       ],
-      "@/routes": [
-        "./src/routes/*"
-      ],
+      "@/types/*": [
+        "types/*"
+      ]
     },
   },
   "include": [

@@ -3,6 +3,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import morgan from 'morgan';
 import compression from 'compression';
+import { helloRouter } from './routes';
 
 export default class App {
   app: express.Application;
@@ -25,9 +26,7 @@ export default class App {
   }
 
   routes(): void {
-    this.app.get('/', (req, res) => {
-      res.json({ message: 'Hello World' }).status(200);
-    });
+    this.app.use('/', helloRouter);
   }
 }
 
