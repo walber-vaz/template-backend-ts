@@ -1,5 +1,6 @@
-import { HelloController } from '@/controllers';
 import { Router } from 'express';
+
+import { HelloController } from '@/controllers';
 
 const helloRouter = Router();
 const helloController = new HelloController();

@@ -10,11 +10,11 @@
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "sourceType": "module"
   },
   "plugins": [
-    "prettier/prettier",
+    "eslint-plugin-prettier",
+    "eslint-plugin-import",
     "simple-import-sort",
     "import",
     "@typescript-eslint"
@@ -31,6 +31,7 @@
       {
         "code": 80
       }
-    ]
+    ],
+    "@typescript-eslint/no-misused-promises": "off"
   }
 }

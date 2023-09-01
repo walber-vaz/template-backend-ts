@@ -1,8 +1,9 @@
+import { type Request, type Response } from 'express';
+
 import { HelloService } from '@/services';
-import { Request, Response } from 'express';
 
 export class HelloController {
-  private helloService: HelloService;
+  private readonly helloService: HelloService;
   constructor() {
     this.helloService = new HelloService();
   }

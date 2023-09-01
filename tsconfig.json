@@ -41,12 +41,13 @@
     },
   },
   "include": [
-    "src"
+    "src/**/*",
+    "prisma/seed.ts"
   ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts",
     "**/*.test.ts",
-    "dist"
+    "dist",
   ]
 }
