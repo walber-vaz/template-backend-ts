@@ -1,6 +1,6 @@
 import { type Request, type Response } from 'express';
 
-import { HelloService } from '@/services';
+import { HelloService } from '@/modules/hello/services';
 
 export class HelloController {
   private readonly helloService: HelloService;

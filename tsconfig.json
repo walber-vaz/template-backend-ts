@@ -14,35 +14,10 @@
       "@/*": [
         "*"
       ],
-      "@/config/*": [
-        "config/*"
-      ],
-      "@/controllers/*": [
-        "controllers/*"
-      ],
-      "@/middlewares/*": [
-        "middlewares/*"
-      ],
-      "@/models/*": [
-        "models/*"
-      ],
-      "@/routes/*": [
-        "routes/*"
-      ],
-      "@/services/*": [
-        "services/*"
-      ],
-      "@/utils/*": [
-        "utils/*"
-      ],
-      "@/types/*": [
-        "types/*"
-      ]
     },
   },
   "include": [
     "src/**/*",
-    "prisma/seed.ts"
   ],
   "exclude": [
     "node_modules",

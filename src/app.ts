@@ -4,7 +4,7 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
-import { helloRouter } from './routes';
+import { router } from './routes';
 
 export default class App {
   app: express.Application;
@@ -27,7 +27,7 @@ export default class App {
   }
 
   routes(): void {
-    this.app.use('/', helloRouter);
+    this.app.use('/', router);
   }
 }
 

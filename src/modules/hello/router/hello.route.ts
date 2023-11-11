@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { HelloController } from '@/controllers';
+import { HelloController } from '@/modules/hello/controllers';
 
 const helloRouter = Router();
 const helloController = new HelloController();

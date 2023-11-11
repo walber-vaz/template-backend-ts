@@ -1,5 +1,5 @@
-import HelloModel from '@/models/hello.model';
-import { type IMessage } from '@/types/IMessage';
+import type { IMessage } from '@/modules/hello/interface/IMessage';
+import HelloModel from '@/modules/hello/models/hello.model';
 
 export class HelloService {
   private readonly helloModel: HelloModel;

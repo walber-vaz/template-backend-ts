@@ -1,3 +1,9 @@
-import { helloRouter } from './hello.route';
+import { Router } from 'express';
 
-export { helloRouter };
+import { helloRouter } from '@/modules/hello/router/hello.route';
+
+const router = Router();
+
+router.use('/hello', helloRouter);
+
+export { router };
