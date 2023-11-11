@@ -31,24 +31,26 @@ A estrutura de pastas e arquivos deste repositório está organizada da seguinte
 ```bash
 src
 ├── app.ts
-├── config
+├── lib
 │   └── prisma
 │       └── client.ts
-├── controllers
-│   ├── hello.controller.ts
-│   └── index.ts
-├── middlewares
-├── models
-│   └── hello.model.ts
+├── modules
+│   └── hello
+│       ├── controllers
+│       │   ├── hello.controller.ts
+│       │   └── index.ts
+│       ├── interface
+│       │   └── IMessage.ts
+│       ├── models
+│       │   └── hello.model.ts
+│       ├── router
+│       │   └── hello.route.ts
+│       └── services
+│           ├── hello.service.ts
+│           └── index.ts
 ├── routes
-│   ├── hello.route.ts
 │   └── index.ts
-├── server.ts
-├── services
-│   ├── hello.service.ts
-│   └── index.ts
-├── types
-└── utils
+└── server.ts
 ```
 
 A seguir, uma breve explicação sobre cada uma das pastas e arquivos:
