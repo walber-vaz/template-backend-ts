@@ -14,4 +14,29 @@ export class HelloController {
       message: hello,
     });
   };
+
+  createHello = async (req: Request, res: Response): Promise<Response> => {
+    const { message } = req.body;
+    const newMessage = await this.helloService.create(message);
+    return res.status(201).json({
+      message: newMessage,
+    });
+  };
+
+  deleteHello = async (req: Request, res: Response): Promise<Response> => {
+    const { id } = req.params;
+    const deletedMessage = await this.helloService.delete(id);
+    return res.status(200).json({
+      message: deletedMessage,
+    });
+  };
+
+  updateHello = async (req: Request, res: Response): Promise<Response> => {
+    const { id } = req.params;
+    const { message } = req.body;
+    const updatedMessage = await this.helloService.update(id, message);
+    return res.status(200).json({
+      message: updatedMessage,
+    });
+  };
 }

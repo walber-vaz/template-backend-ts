@@ -5,7 +5,8 @@
   "author": "Walber Vaz da Silva <wvs.walber@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "if [ -d dist ]; then rm -rf dist; fi && tsc && tsc-alias && prisma generate",
+    "prebuild": "npm run prisma:generate",
+    "build": "npm run prebuild && if [ -d dist ]; then rm -rf dist; fi && tsc && tsc-alias",
     "dev": "nodemon --config nodemon.json",
     "start": "node dist/server.js",
     "lint": "eslint --ext .ts ./src && prettier --check ./src",

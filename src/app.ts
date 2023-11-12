@@ -27,7 +27,7 @@ export default class App {
   }
 
   routes(): void {
-    this.app.use('/', router);
+    this.app.use('/api/v1', router);
   }
 }
 

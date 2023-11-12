@@ -8,8 +8,8 @@ datasource db {
 }
 
 model Message {
-  id        String    @id @default(cuid())
+  id        String   @id @default(cuid())
   message   String
-  createdAt DateTime? @default(now())
-  updatedAt DateTime? @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
