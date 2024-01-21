@@ -1,13 +1,13 @@
-import { Router } from 'express';
+import { Router } from 'express'
 
-import { HelloController } from '@/modules/hello/controllers';
+import { HelloController } from '@/modules/hello/controllers'
 
-const helloRouter = Router();
-const helloController = new HelloController();
+const helloRouter = Router()
+const helloController = new HelloController()
 
-helloRouter.get('/message', helloController.getHello);
-helloRouter.post('/message', helloController.createHello);
-helloRouter.delete('/message/:id', helloController.deleteHello);
-helloRouter.put('/message/:id', helloController.updateHello);
+helloRouter.get('/message', helloController.getHello)
+helloRouter.post('/message', helloController.createHello)
+helloRouter.delete('/message/:id', helloController.deleteHello)
+helloRouter.put('/message/:id', helloController.updateHello)
 
-export { helloRouter };
+export { helloRouter }

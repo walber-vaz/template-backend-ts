@@ -1,18 +1,17 @@
-import compression from 'compression';
-import cors from 'cors';
-import express from 'express';
-import helmet from 'helmet';
-import morgan from 'morgan';
+import compression from 'compression'
+import cors from 'cors'
+import express from 'express'
+import helmet from 'helmet'
 
-import { router } from './routes';
+import { router } from './routes'
 
 export default class App {
-  app: express.Application;
+  app: express.Application
 
   constructor() {
-    this.app = express();
-    this.middlewares();
-    this.routes();
+    this.app = express()
+    this.middlewares()
+    this.routes()
   }
 
   middlewares(): void {
@@ -21,14 +20,13 @@ export default class App {
       express.urlencoded({ extended: true }),
       helmet(),
       cors(),
-      morgan('dev'),
       compression(),
-    );
+    )
   }
 
   routes(): void {
-    this.app.use('/api/v1', router);
+    this.app.use('/api/v1', router)
   }
 }
 
-export const app = new App().app;
+export const app = new App().app

@@ -1,1 +1,1 @@
-export * from './hello.service';
+export * from './hello.service'
