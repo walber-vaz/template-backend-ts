@@ -1,0 +1,12 @@
+services:
+    db:
+        build: postgres
+        container_name: store_db
+        volumes:
+            - $HOME/.postgres/store_db/data/postgresql:/var/lib/postgresql/data
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_DBS=store_db, store_db_test
+            - POSTGRES_USER=docker
+            - POSTGRES_PASSWORD=docker
