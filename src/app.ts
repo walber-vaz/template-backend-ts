@@ -3,30 +3,14 @@ import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
 
-import { router } from './routes'
+const app = express()
 
-export default class App {
-  app: express.Application
+app.use(cors())
+app.use(helmet())
+app.use(compression())
 
-  constructor() {
-    this.app = express()
-    this.middlewares()
-    this.routes()
-  }
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'Hello World!' })
+})
 
-  middlewares(): void {
-    this.app.use(
-      express.json(),
-      express.urlencoded({ extended: true }),
-      helmet(),
-      cors(),
-      compression(),
-    )
-  }
-
-  routes(): void {
-    this.app.use('/api/v1', router)
-  }
-}
-
-export const app = new App().app
+export { app }
