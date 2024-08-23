@@ -1,16 +1,10 @@
 {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.organizeImports": "always"
-    },
     "prettier.configPath": "./.prettierrc.json",
     "[prisma]": {
         "editor.defaultFormatter": "Prisma.prisma"
     },
     "typescript.tsdk": "node_modules/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
-    "editor.tabSize": 4,
-    "editor.formatOnPaste": true
+    "editor.tabSize": 4
 }

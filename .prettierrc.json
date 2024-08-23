@@ -6,5 +6,19 @@
     "trailingComma": "all",
     "arrowParens": "always",
     "endOfLine": "lf",
-    "useTabs": false
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": "*.yaml",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.yml",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
