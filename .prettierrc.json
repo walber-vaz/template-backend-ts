@@ -1,24 +1,9 @@
 {
-    "semi": false,
+    "semi": true,
     "singleQuote": true,
-    "printWidth": 88,
     "tabWidth": 4,
-    "trailingComma": "all",
-    "arrowParens": "always",
-    "endOfLine": "lf",
     "useTabs": false,
-    "overrides": [
-        {
-            "files": "*.yaml",
-            "options": {
-                "tabWidth": 2
-            }
-        },
-        {
-            "files": "*.yml",
-            "options": {
-                "tabWidth": 2
-            }
-        }
-    ]
+    "printWidth": 88,
+    "endOfLine": "lf",
+    "trailingComma": "all"
 }
