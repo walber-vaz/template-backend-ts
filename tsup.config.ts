@@ -10,7 +10,15 @@ const config: Options = {
     sourcemap: true,
     splitting: true,
     minify: true,
-    external: ['express', 'prisma', 'compression', 'helmet', 'cors'],
+    external: [
+        'express',
+        'prisma',
+        'compression',
+        'helmet',
+        'cors',
+        'morgan',
+        'dotenv',
+    ],
 };
 
 export default config;
